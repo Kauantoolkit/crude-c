@@ -18,9 +18,9 @@ int total_alunos = 0;  // Para controlar os IDs dos alunos
 Aluno* raiz = NULL;  // Raiz da árvore AVL
 
 // Função para calcular a altura de um nó
-int altura(Aluno* nodo) {
-    if (nodo == NULL) return 0;
-    return nodo->altura;
+int altura(Aluno* aluno_altura_analisada) {
+    if (aluno_altura_analisada == NULL) return 0;
+    return aluno_altura_analisada->altura;
 }
 
 // Função para atualizar a altura de um nó
