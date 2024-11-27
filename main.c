@@ -113,7 +113,7 @@ int main() {
                 return 0;
 
             default:
-                printf("Opção inválida! Tente novamente.\n");
+                printf("Opcao invalida! Tente novamente.\n");
                 debug_alturas(raiz);
         }
     }
