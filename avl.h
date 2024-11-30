@@ -1,3 +1,16 @@
+
+
+
+//Função para realizar uma rotação à direita
+//Função para realizar uma rotação à esquerda
+//Função para balancear a árvore AVL
+
+
+
+
+
+
+
 #ifndef AVL_H
 #define AVL_H
 
@@ -7,22 +20,22 @@ extern int total_alunos;
 extern Aluno* raiz;
 
 // Função para calcular a altura de um nó
-static inline int altura(Aluno* aluno_altura_analisada) {
+static inline int altura(Aluno* aluno_altura_analisada) {                                               
     if (aluno_altura_analisada == NULL) return 0;
     return aluno_altura_analisada->altura;
 }
 
 // Função para atualizar a altura de um nó
 static inline void atualizar_altura(Aluno* nodo) {
-    if (nodo) {
+    if (nodo) { 
         int altura_esquerda = altura(nodo->esquerda);
         int altura_direita = altura(nodo->direita);
         nodo->altura = (altura_esquerda > altura_direita ? altura_esquerda : altura_direita) + 1;
     }
 }
 
-// Função para calcular o fator de balanceamento de um nó
-static inline int fator_balanceamento(Aluno* nodo) {
+// Função para calcular o fator de balanceamento de um nó                                                               x
+static inline int fator_balanceamento(Aluno* nodo) {    
     if (nodo == NULL) return 0;
     return altura(nodo->esquerda) - altura(nodo->direita);
 }
